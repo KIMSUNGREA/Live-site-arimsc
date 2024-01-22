@@ -1,0 +1,71 @@
+<!-- 반응형 게시판 시작 -->
+<div class="rt-rwd-notice-wrap">
+	<!-- 검색폼 시작 -->
+	<div class="rt-rwd-search-wrap">
+	<form name="search_form" method="get" action="{php_self}">
+	<input type="hidden" name="pcd" value="{페이지코드}">
+	<input type="hidden" name="screen" value="{이동화면}">
+		<div class="rt-rwd-search-select-wrap">
+			<!--{? 분류사용 == 'y' }-->
+			<select class="rt-rwd-search-select" name="ct">
+				<option value="">분류 선택</option>
+				<!--{@ 글분류}-->
+				<option value="{글분류.분류명}" {글분류.selected}>{글분류.분류명}</option>
+				<!--{/}-->
+			</select>
+			<!--{/}-->
+		</div>
+		<div class="rt-rwd-search-select-wrap">
+			<select class="rt-rwd-search-select" name="search">
+				<option value="subject">제목</option>
+				<option value="content">내용</option>
+				<option value="subjcont">제목+내용</option>
+				<option value="name">작성자</option>
+			</select>
+		</div>
+		<div class="rt-rwd-search-input-wrap">
+			<input type="text" name="searchstring" class="rt-rwd-search-input" value="{검색어}"/>
+		</div>
+		<a href="javascript:document.search_form.submit();" class="rt-rwd-search-send">검색</a>
+	</form>
+	</div>
+	<!-- 검색폼 끝 -->
+	<!-- 썸업 게시판 리스트 시작 -->
+	<div class="rt-rwd-thumb-wrap clearfix">
+		<!--{? 리스트}-->
+			<!--{@ 리스트}-->
+			<div class="rt-rwd-thumb-con clearfix">
+				<div class="rt-rwd-thumb-left">
+					<a href="{리스트.상세페이지링크}"><img src="{리스트.목록이미지경로}" alt="썸네일" /></a>
+				</div>
+				<div class="rt-rwd-thumb-right">
+					<p class="rt-rwd-thumb-subject"><!--{? 분류사용 == 'y' && 리스트.분류 }-->[{리스트.분류}]&nbsp;&nbsp;<!--{/}--><a href="{리스트.상세페이지링크}">{리스트.줄임제목}<!--{? 댓글사용 == 'y' && 리스트.댓글수 > 0}-->[{리스트.댓글수}]<!--{/}--></a></p>
+					<p class="rt-rwd-thumb-substance">{리스트.줄임본문}</p>
+					<div class="rt-rwd-thumb-data-wrap clearfix">
+						<div class="rt-rwd-thumb-data">
+							<p><span class="rt-rwd-thumb-data-m">작성자 : </span>{리스트.작성자}</p>
+						</div>
+						<div class="rt-rwd-thumb-data">
+							<p><span class="rt-rwd-thumb-data-m">등록일 : </span>{리스트.작성일}</p>
+						</div>
+						<div class="rt-rwd-thumb-data">
+							<p><span class="rt-rwd-thumb-data-m">조회수 : </span>{리스트.조회수}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--{/}-->
+		<!--{:}-->
+			<div class="rt-rwd-list-nosearch clearfix">
+				등록된 글이 없습니다.
+			</div>
+		<!--{/}-->
+	</div>
+	{페이지인덱스}
+	<!-- 썸업 게시판 리스트 끝 -->
+</div>
+<!-- 반응형 게시판 끝 -->
+
+<!-- 반응형 CSS STR-->
+<link href="{path_css}/rtboard.info.responsive.css" type="text/css" rel="stylesheet"/>
+<!-- 반응형 CSS END-->

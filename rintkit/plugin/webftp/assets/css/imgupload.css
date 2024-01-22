@@ -1,0 +1,88 @@
+@charset "utf-8";
+@import url('reset.css');
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../fonts/NotoSansKR-Thin.woff2') format('woff2'),
+	   url('../fonts/NotoSansKR-Thin.woff') format('woff'),
+	   url('../fonts/NotoSansKR-Thin.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/NotoSansKR-Light.woff2') format('woff2'),
+	   url('../fonts/NotoSansKR-Light.woff') format('woff'),
+	   url('../fonts/NotoSansKR-Light.otf') format('opentype');
+}
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 400;
+   src: url('../fonts/NotoSansKR-Regular.woff2') format('woff2'),
+		url('../fonts/NotoSansKR-Regular.woff') format('woff'),
+		url('../fonts/NotoSansKR-Regular.otf') format('opentype');
+ }
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 500;
+   src: url('../fonts/NotoSansKR-Medium.woff2') format('woff2'),
+		url('../fonts/NotoSansKR-Medium.woff') format('woff'),
+		url('../fonts/NotoSansKR-Medium.otf') format('opentype');
+ }
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 700;
+   src: url('../fonts/NotoSansKR-Bold.woff2') format('woff2'),
+		url('../fonts/NotoSansKR-Bold.woff') format('woff'),
+		url('../fonts/NotoSansKR-Bold.otf') format('opentype');
+ }
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 900;
+   src: url('../fonts/NotoSansKR-Black.woff2') format('woff2'),
+		url('../fonts/NotoSansKR-Black.woff') format('woff'),
+		url('../fonts/NotoSansKR-Black.otf') format('opentype');
+ }
+::selection{color:#fff;background-color:#f26522;}
+::-moz-selection{color:#fff;background-color:#f26522;}
+
+body{overflow:auto; min-width:900px;  height: 550px; margin:0 auto;}
+#wrap{font-family: 'Noto Sans KR'; letter-spacing:-1px; font-size: 12px; color: #999; }
+input[type=text] {padding-left: 7px; height: 25px; line-height: 25px; letter-spacing: 0;}
+
+#wrap .title {font-size: 22px; color: #5a595a; text-align: center; padding: 7px 0; background-color: #D9D9D9; border-top: 3px solid #AFAFAF; border-bottom: 3px solid #AFAFAF;}
+.con {padding: 10px;}
+.left {float: left; min-width: 380px;  width: 44%; }
+.tit {color: #333; padding: 3px 0; }
+.left_center {height: 400px; overflow-y:scroll;}
+/* .left_table {table-layout:fixed;} */
+.left_table thead { border-top: 1px solid #ddd;border-bottom: 1px solid #ddd; background-color: #fff; }
+.left_table th {padding: 7px 2px; background-color: #efefef; color: #333; font-weight: normal;}
+.left_table td {padding: 3px 2px;border-bottom: 1px solid #ddd; letter-spacing: -0.5px; color: #555; }
+.left_table .col1 {width: 25px; text-align: center;}
+.left_table .col2 {width: 25px; text-align: center;}
+.left_table .col3 {width: 150px;}
+.left_table .col4 {width: 45px; text-align: right;}
+.left_table .col5 {width: 70px; text-align: right;}
+.left_table .col6 {width: 40px;}
+.btn_wrap a {display: inline-block; padding: 4px 6px; border: 1px solid #ccc; border-radius:3px; background-color: #eee;color: #000;	}
+.left_bottom {position: relative;}
+.btn_wrap a:hover {border-color: #aaa; background-color: #e1e1e1;}
+.right_txt {position: absolute; top: 7px; right: 0; font-size: 11px; letter-spacing: 0;}
+.txt_color_red {color: #f00; letter-spacing: -1px;}
+
+.right {float: right; width: 55%; color: #5a595a; }
+.input_wrap {background-color: #f4f4f4; border: 2px solid #D3D1B5; padding:5px 10px; position: relative;}	
+.input_box {margin-right: 65px;}
+.input_box input {width: 100%;}
+.input_wrap .btn {position: absolute; top: 6px; right: 10px;}
+.img {border: 1px solid #D3D1B5; border-top: none; text-align: center; min-height:150px; padding: 10px;}
+.input_wrap1 input {width: 200px; margin-left: 7px;}
+.input_wrap1 .btn_wrap a { transform:translateY(2px); margin-left: 7px;}
+.input_wrap2 {background-color: #fff; height:140px; overflow:auto;}

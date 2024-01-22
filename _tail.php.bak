@@ -1,0 +1,19 @@
+		<!-- footer -->
+		<?php include_once("layout/footer.php");?>
+		<!-- //footer -->
+	</div>
+
+<!-- Ä«Ä«¿À¸Ê -->
+<script charset="UTF-8">
+	new daum.roughmap.Lander({
+		"timestamp" : "1698743926589",
+		"key" : "2gnsf",
+		//"mapWidth" : "",
+		"mapHeight" : "840"
+	}).render();
+
+	AOS.init();
+</script>
+</body>
+</html>
+				

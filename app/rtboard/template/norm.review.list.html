@@ -1,0 +1,25 @@
+
+	<ul class="com_list">
+	<!--{@ 리스트}-->
+		<li>
+			<!--{? 리스트.분류 == '포토후기' }-->
+			<a href="{리스트.상세페이지링크}">
+			<!--{:}-->
+			<a href="{리스트.SNS주소}" target="_blank">
+			<!--{/}-->
+				<figure>
+					<img src="{리스트.목록이미지경로}" alt="">
+				</figure>
+				<figcaption>
+					{리스트.별점}
+					<p>{리스트.작성자}</p>
+					<span>{리스트.줄임제목}</span>
+				</figcaption>
+			</a>
+		</li>
+	<!--{/}-->
+	</ul>
+
+	{페이지인덱스}
+
+	<link href="{path_css}/rtboard.norm.responsive.css" type="text/css" rel="stylesheet"/>

@@ -1,0 +1,23 @@
+.divform{position:absolute;overflow:hidden;border:1px solid #222;}
+.divform p{font-family:'Malgun Gothic','Nanum Gothic';line-height:150%;font-size:11pt;}
+p.closeWrap{height:16px; height:36px; padding:0 10px; color:#949393; background-color:#222; line-height:36px;}
+.divform p label{font-size:14px;}
+.divform input{margin:0 5px 0 0;float:none;}
+.divform a{float:right; color:#949393 !important;}
+.divform img {max-width:none;}
+
+
+@media all and (max-width:1200px){ 
+	.divform {left: 50px !important;}
+}
+
+@media all and (max-width:680px){ 
+	.divform {left: 5% !important; text-align: center; min-width:300px;}
+	.divform img {height: auto !important; width: auto !important; max-width: 100%; }
+	.divform p label {font-size: 12px;}
+	p.closeWrap {text-align: left; height: 30px; line-height: 28px;}
+	.divform a {font-size: 11px; line-height: 30px;}
+}
+@media all and (max-width:486px){
+	.divform {max-width: 90%;}
+}
